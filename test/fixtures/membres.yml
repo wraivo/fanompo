@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fiantso: MyString
+  anarana: MyString
+  fanampiny: MyString
+  tsyeo: false
+  fanamarih: MyText
+
+two:
+  fiantso: MyString
+  anarana: MyString
+  fanampiny: MyString
+  tsyeo: false
+  fanamarih: MyText
