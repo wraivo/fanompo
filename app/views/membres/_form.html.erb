@@ -1,0 +1,47 @@
+<%= form_with(model: membre) do |form| %>
+  <% if membre.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(membre.errors.count, "error") %> prohibited this membre from being saved:</h2>
+
+      <ul>
+        <% membre.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :mbID, style: "display: block" %>
+    <%= form.number_field :mbID %>
+  </div>
+
+  <div>
+    <%= form.label :fiantso, style: "display: block" %>
+    <%= form.text_field :fiantso %>
+  </div>
+
+  <div>
+    <%= form.label :anarana, style: "display: block" %>
+    <%= form.text_field :anarana %>
+  </div>
+
+  <div>
+    <%= form.label :fanampiny, style: "display: block" %>
+    <%= form.text_field :fanampiny %>
+  </div>
+
+  <div>
+    <%= form.label :tsyeo, style: "display: block" %>
+    <%= form.check_box :tsyeo %>
+  </div>
+
+  <div>
+    <%= form.label :fanamarih, style: "display: block" %>
+    <%= form.text_area :fanamarih %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+class Fanome < ApplicationRecord
+end

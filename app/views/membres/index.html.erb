@@ -1,16 +1,14 @@
-mandeha tsara e! <br>
-efa vita ny database <br>
-efa vita ny model membres <br>
-ny root route koa efa vita 
-inty ny records
-<ul>
-<% @membres.each do |f| %>
-   
-    <li>
+<p style="color: green"><%= notice %></p>
 
-        <%= f.fanampiny %>
-    </li>
-<% end %>
-</ul>
+<h1>Membres</h1>
 
+<div id="membres">
+  <% @membres.each do |membre| %>
+    <%= render membre %>
+    <p>
+      <%= link_to "Show this membre", membre %>
+    </p>
+  <% end %>
+</div>
 
+<%= link_to "New membre", new_membre_path %>

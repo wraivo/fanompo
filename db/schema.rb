@@ -10,13 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_05_173316) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_06_132751) do
   create_table "membres", force: :cascade do |t|
     t.string "fiantso"
     t.string "anarana"
     t.string "fanampiny"
     t.boolean "tsyeo"
     t.text "fanamarih"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "services", force: :cascade do |t|
+    t.integer "svcID"
+    t.string "fohy"
+    t.string "lava"
+    t.string "fanamarih"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

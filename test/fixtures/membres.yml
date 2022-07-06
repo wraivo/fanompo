@@ -1,6 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  mbID: 1
   fiantso: MyString
   anarana: MyString
   fanampiny: MyString
@@ -8,6 +9,7 @@ one:
   fanamarih: MyText
 
 two:
+  mbID: 1
   fiantso: MyString
   anarana: MyString
   fanampiny: MyString
